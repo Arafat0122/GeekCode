@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Banner = () => {
   return (
     <section
-      className="hero-section relative w-full text-center overflow-hidden pt-20 pb-10 text-white"
+      className="hero-section relative w-full min-h-screen flex items-center text-center overflow-hidden pt-20 pb-10 text-white"
       id="hero_section"
     >
       {/* Background Gradient */}

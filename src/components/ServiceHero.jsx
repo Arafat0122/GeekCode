@@ -5,7 +5,7 @@ const ServiceHero = () => {
     return (
         <section
             data-aos="fade-in"
-            className="hero-section relative overflow-hidden pt-16 text-white"
+            className="hero-section relative overflow-hidden pt-16 text-white min-h-screen flex items-center"
             id="hero_section"
         >
             {/* Decorative Grid Background */}
