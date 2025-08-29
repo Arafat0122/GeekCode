@@ -4,7 +4,7 @@ const ContactPage = () => {
   return (
     <section
       id="contact_section"
-      className="relative min-h-[350px] overflow-hidden py-12 md:py-20"
+      className="relative min-h-[350px] overflow-hidden py-28 md:py-24"
     >
       {/* Background Grid */}
       <img
