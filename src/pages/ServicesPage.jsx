@@ -121,10 +121,10 @@ const ServicesPage = () => {
 
           {/* UI/UX Design */}
           <div className="digital-marketing-services flex flex-col items-center gap-10 md:flex-row">
-            <div data-aos='fade-right'  className="left-content w-full md:w-1/2">
+            <div data-aos='fade-right' className="left-content w-full md:w-1/2">
               <img src={services03} alt="UI/UX Design Services" className="w-full rounded-lg shadow-lg grayscale" />
             </div>
-            <div data-aos='fade-left'  className="right-content w-full md:w-1/2">
+            <div data-aos='fade-left' className="right-content w-full md:w-1/2">
               <h2 className="mb-4 text-3xl font-bold md:text-4xl">UI/UX Design Services</h2>
               <p className="mb-6 text-lg leading-relaxed">
                 Our user-centered design approach creates intuitive interfaces that drive engagement and conversions. We combine aesthetics with functionality for exceptional digital experiences.
@@ -150,7 +150,7 @@ const ServicesPage = () => {
           </div>
           {/* WordPress Development */}
           <div className="wordpress-services mt-20 flex flex-col-reverse items-center gap-10 md:flex-row">
-            <div data-aos='fade-right'  className="left-content w-full md:w-1/2">
+            <div data-aos='fade-right' className="left-content w-full md:w-1/2">
               <h2 className="mb-4 text-3xl font-bold md:text-4xl">WordPress Development Solutions</h2>
               <p className="mb-6 text-lg leading-relaxed">
                 We build powerful, scalable WordPress websites that combine beautiful design with robust functionality. Our expert developers create custom solutions tailored to your business needs.
@@ -173,7 +173,7 @@ const ServicesPage = () => {
                 </li>
               </ul>
             </div>
-            <div data-aos='fade-left'  className="right-content w-full md:w-1/2">
+            <div data-aos='fade-left' className="right-content w-full md:w-1/2">
               <img src={services04} alt="WordPress Development Services" className="w-full rounded-lg shadow-lg grayscale" />
             </div>
           </div>

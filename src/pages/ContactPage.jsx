@@ -1,49 +1,96 @@
-import { FiMail, FiMapPin, FiPhone } from 'react-icons/fi';
+import { FiMail, FiMapPin, FiPhone } from "react-icons/fi";
 
 const ContactPage = () => {
   return (
-    <section id="contact_section" className="contact-section relative min-h-[350px] overflow-hidden py-10">
-      <img src="./assets/hero-grid.webp" alt="heroGrid" loading="lazy" className="absolute top-0 right-0 -z-2 mx-auto hidden h-full w-full object-cover opacity-15 md:block" />
-      <div className="relative container px-3 text-white">
-        <div className="heading-title relative mx-auto text-center text-2xl md:text-3xl lg:mb-8 lg:text-4xl">
-          <p className="text-light-gray border-icon-bg/30 from-card-bg to-card-bg mx-auto w-fit rounded-3xl border bg-gradient-to-r px-5 py-1.5 text-xs uppercase md:mb-5">Contact</p>
-        </div>
-        <br />
+    <section
+      id="contact_section"
+      className="relative min-h-[350px] overflow-hidden py-12 md:py-20"
+    >
+      {/* Background Grid */}
+      <img
+        src="./assets/hero-grid.webp"
+        alt="background grid"
+        loading="lazy"
+        className="absolute inset-0 -z-10 hidden h-full w-full object-cover opacity-15 md:block"
+      />
 
-        <div className="contact-content flex flex-col justify-between gap-3 lg:flex-row">
-          <div data-aos="fade-right" className="left-content mx-auto max-w-[600px]">
-            <h2 className="from-light-blue to-main w-fit bg-gradient-to-l bg-clip-text text-left text-3xl md:text-5xl font-medium text-transparent lg:mt-0">Ask whatever you have in your mind</h2>
-            <p className="text-light-gray mt-2 text-lg md:text-xl">Whether you have questions or want to discuss your next project, we’re here to help. Reach out to GeekCode today.</p>
-            <div className="address mt-5 mb-5">
-              <ul className="text-light-gray space-y-3 md:text-lg">
-                <li className="flex items-start">
-                  <FiMail className="text-main mt-0.5 mr-2 h-5 w-5" />
-                  <a href="mailto:contact@GeekCode.dev" className="hover:underline">
-                    contact@GeekCode.dev
-                  </a>
-                </li>
-                <li className="flex items-start">
-                  <FiPhone className="text-main mt-0.5 mr-2 h-5 w-5" />
-                  <span>+880 1234-567890</span>
-                </li>
-                <li className="flex items-start">
-                  <FiMapPin className="text-main mt-0.5 mr-2 h-7 w-5" />
-                  <span>42 Dev Street, CodeTown, BD 4567</span>
-                </li>
-              </ul>
-            </div>
+      <div className="container relative mx-auto px-4 text-white">
+        {/* Section Heading */}
+        <div className="text-center mb-10">
+          <p className="mx-auto w-fit rounded-3xl border border-icon-bg/30 bg-gradient-to-r from-card-bg to-card-bg px-5 py-1.5 text-xs uppercase tracking-wide text-light-gray md:mb-4">
+            Contact
+          </p>
+          <h2 className="bg-gradient-to-l from-light-blue to-main bg-clip-text text-3xl font-semibold text-transparent md:text-5xl">
+            Let’s Build Something Together
+          </h2>
+        </div>
+
+        {/* Content Grid */}
+        <div className="flex flex-col gap-10 lg:flex-row lg:gap-16">
+          {/* Left Content */}
+          <div
+            data-aos="fade-right"
+            className="mx-auto max-w-[600px] lg:mx-0 lg:w-1/2"
+          >
+            <h3 className="mb-4 text-2xl font-semibold md:text-3xl">
+              Get in Touch
+            </h3>
+            <p className="text-light-gray mb-6 text-lg leading-relaxed md:text-xl">
+              Whether you’re curious about our services, want to discuss your
+              next project, or just say hi — we’d love to hear from you. Reach
+              out anytime!
+            </p>
+
+            {/* Contact Info */}
+            <ul className="space-y-4 text-light-gray md:text-lg">
+              <li className="flex items-start gap-2">
+                <FiMail className="mt-1 text-main h-5 w-5 flex-shrink-0" />
+                <a
+                  href="mailto:contact@GeekCode.dev"
+                  className="hover:text-white transition"
+                >
+                  contact@geekcode.dev
+                </a>
+              </li>
+              <li className="flex items-start gap-2">
+                <FiPhone className="mt-1 text-main h-5 w-5 flex-shrink-0" />
+                <span>+880 1234-567890</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <FiMapPin className="mt-1 text-main h-6 w-5 flex-shrink-0" />
+                <span>42 Dev Street, CaveTown, CAN 4567</span>
+              </li>
+            </ul>
           </div>
 
-          <div data-aos="fade-left" className="right-content sm:mx-auto">
-            <form className="w-full space-y-6 sm:w-[450px] md:w-[600px]">
+          {/* Right Content: Contact Form */}
+          <div
+            data-aos="fade-left"
+            className="sm:mx-auto lg:w-1/2"
+          >
+            <form className="space-y-6 rounded-xl bg-card-bg/20 p-6 shadow-lg backdrop-blur-md sm:w-[450px] md:w-[600px]">
               <div>
-                <label htmlFor="name" className="text-light-gray mb-1 block text-lg font-medium">
+                <label
+                  htmlFor="name"
+                  className="mb-1 block text-sm font-medium text-light-gray"
+                >
                   Name
                 </label>
-                <input type="text" id="name" name="name" required placeholder="Your name" className="bg-dark-bg w-full rounded-md border border-icon-bg/30 outline-none px-4 py-2 text-white" />
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="Your name"
+                  className="w-full rounded-md border border-icon-bg/30 bg-dark-bg px-4 py-3 text-white outline-none transition focus:border-main focus:ring-2 focus:ring-main/40"
+                />
               </div>
+
               <div>
-                <label htmlFor="email" className="text-light-gray mb-1 block text-lg font-medium">
+                <label
+                  htmlFor="email"
+                  className="mb-1 block text-sm font-medium text-light-gray"
+                >
                   Email
                 </label>
                 <input
@@ -51,12 +98,16 @@ const ContactPage = () => {
                   id="email"
                   name="email"
                   required
-                  placeholder="Type your email"
-                  className="bg-dark-bg w-full rounded-md border border-icon-bg/30 outline-none px-4 py-2 text-white"
+                  placeholder="Your email"
+                  className="w-full rounded-md border border-icon-bg/30 bg-dark-bg px-4 py-3 text-white outline-none transition focus:border-main focus:ring-2 focus:ring-main/40"
                 />
               </div>
+
               <div>
-                <label htmlFor="message" className="text-light-gray mb-1 block text-lg font-medium">
+                <label
+                  htmlFor="message"
+                  className="mb-1 block text-sm font-medium text-light-gray"
+                >
                   Message
                 </label>
                 <textarea
@@ -64,11 +115,16 @@ const ContactPage = () => {
                   rows="4"
                   name="message"
                   required
-                  placeholder="Send us a message"
-                  className="bg-dark-bg w-full rounded-md border border-icon-bg/30 outline-none px-4 py-2 text-white"></textarea>
+                  placeholder="Write your message..."
+                  className="w-full rounded-md border border-icon-bg/30 bg-dark-bg px-4 py-3 text-white outline-none transition focus:border-main focus:ring-2 focus:ring-main/40"
+                />
               </div>
-              <button type="submit" className="blue-gradient inline-block w-full rounded py-2">
-                Submit
+
+              <button
+                type="submit"
+                className="w-full rounded-md bg-gradient-to-r from-light-blue to-main py-3 font-medium text-white shadow-lg transition hover:scale-[1.02] hover:shadow-xl"
+              >
+                Send Message
               </button>
             </form>
           </div>

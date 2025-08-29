@@ -1,6 +1,6 @@
 # GeekCode — Project Portfolio Website
 
-[Live Demo](https://GeekCode.netlify.app) | [GitHub Repository](https://github.com/jahidulkanchan/GeekCode)
+[Live Demo](https://geekcode.netlify.app) | [GitHub Repository](https://github.com/Arafat0122/GeekCode)
 
 ---
 
