@@ -1,53 +1,15 @@
-import { MdRocketLaunch } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 import { FiArrowUpRight, FiArrowRight } from 'react-icons/fi';
 import services01 from '../assets/services-01.jpg';
 import services02 from '../assets/services-02.jpg';
 import services03 from '../assets/services-03.jpg';
 import services04 from '../assets/services-04.jpg';
+import ServiceHero from '../components/ServiceHero';
 
 const ServicesPage = () => {
   return (
     <>
-      <section data-aos="fade-In" className="hero-section text-white relative pt-10" id="hero_section">
-        {/* Decorative Grid Image */}
-        <img src="./assets/hero-grid.webp" alt="heroGrid" loading="lazy" className="absolute top-0 right-0 -z-2 mx-auto hidden h-full w-full object-cover opacity-15 md:block" />
-
-        {/* Gradient Border */}
-        <div className="via-icon-bg/30 absolute inset-x-0 bottom-0 h-[1px] bg-gradient-to-r from-transparent to-transparent"></div>
-
-        <div className="relative container flex items-center justify-center gap-4 overflow-hidden py-10 lg:min-h-[550px]">
-          <div className="mt-5 flex flex-col items-center justify-center text-center md:mt-0">
-            {/* Animated Badge */}
-            <div className="border-icon-bg/30 to-main/20 from-card-bg relative mb-3 flex w-fit items-center gap-2 overflow-hidden rounded-lg border bg-gradient-to-r px-4 py-2 lg:mx-0">
-              {/* Blaze Effect */}
-              <div className="blaze bg-icon-bg/40 absolute -top-10 -left-10 h-30 w-10 rotate-45 blur-xl"></div>
-
-              {/* Icon + Text */}
-              <MdRocketLaunch className="text-main relative z-10" />
-              <span className="text-light-gray relative z-10">Your Vision, Our Design, Digitalized.</span>
-            </div>
-
-            {/* Heading */}
-            <h1 className="my-4 md:my-6 text-4xl leading-tight font-bold lg:text-6xl">
-              Fusing Creativity With <span className="from-light-blue to-main bg-gradient-to-r bg-clip-text text-transparent">Marketing & Technology</span> To Drive Business Growth
-            </h1>
-
-            {/* Paragraph */}
-            <p className="text-light-gray mb-6 text-base md:text-lg lg:max-w-4xl">
-              Unlock your brand&apos;s full potential with our expert services in Web Development, App Development, and WordPress Solutions. Whether you&apos;re building a fast website, launching an
-              app, or growing your online presence — we provide creative solutions tailored for success.
-            </p>
-
-            {/* CTA Button */}
-            <div>
-              <a href="/contact" className="blue-gradient group flex w-fit items-center gap-3 rounded px-3 py-2.5">
-                Talk to an Expert
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ServiceHero />
       <section className="services-items from-dark-bg to-dark-bg bg-gradient-to-r py-10 text-white overflow-hidden">
         <div data-aos="fade-up" className="heading-title relative mx-auto mb-12 text-center">
           <h2 className="from-light-blue text-3xl sm:text-4xl md:text-6xl max-w-4xl to-main mx-auto bg-gradient-to-r bg-clip-text font-medium text-transparent">
